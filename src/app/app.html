@@ -3,6 +3,12 @@
 <h2>{{ recipe().name }}</h2>
 <p>{{ recipe().description }}</p>
 
+<p>Porções: {{ servings() }}</p>
+
+<button type="button" (click)="diminuirPorcoes()">Diminuir porções</button>
+
+<button type="button" (click)="aumentarPorcoes()">Aumentar porções</button>
+
 <button type="button" (click)="verCarbonara()">Ver Carbonara</button>
 
 <button type="button" (click)="verSaladaCaprese()">Ver Salada Caprese</button>
