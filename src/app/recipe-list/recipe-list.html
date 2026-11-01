@@ -1,5 +1,12 @@
-﻿<app-recipe-detail [recipe]="recipe()" />
+﻿@if (recipe().isFavorite) {
+  <p class="favorite-indicator">
+    <span aria-hidden="true">★</span>
+    {{ recipe().name }} — Receita favorita
+  </p>
+}
+<app-recipe-detail [recipe]="recipe()" />
 
 <button type="button" (click)="verCarbonara()">Ver Carbonara</button>
 
 <button type="button" (click)="verSaladaCaprese()">Ver Salada Caprese</button>
+

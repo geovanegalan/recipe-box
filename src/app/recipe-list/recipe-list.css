@@ -1,0 +1,15 @@
+﻿:host {
+  display: block;
+}
+
+.favorite-indicator {
+  width: fit-content;
+  max-width: 100%;
+  box-sizing: border-box;
+  padding: 0.75rem 1rem;
+  color: #624400;
+  background-color: #fff4cc;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  line-height: 1.5;
+}

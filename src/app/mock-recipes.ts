@@ -4,6 +4,7 @@ export const MOCK_RECIPES: RecipeModel[] = [
   {
     id: 1,
     name: 'Spaghetti Carbonara',
+    isFavorite: true,
     description: 'Uma massa italiana clássica.',
     ingredients: [
       { name: 'Espaguete', quantity: 200, unit: 'g' },
@@ -15,6 +16,7 @@ export const MOCK_RECIPES: RecipeModel[] = [
   {
     id: 2,
     name: 'Salada Caprese',
+    isFavorite: false,
     description: 'Uma salada de tomate, muçarela e manjericão.',
     ingredients: [
       { name: 'Tomates', quantity: 4, unit: 'unidades' },
