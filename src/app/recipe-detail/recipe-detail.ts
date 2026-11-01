@@ -26,4 +26,3 @@ export class RecipeDetail {
     this.servings.update((valorAtual) => Math.max(1, valorAtual - 1));
   }
 }
-
