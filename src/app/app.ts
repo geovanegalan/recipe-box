@@ -1,5 +1,7 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { RecipeModel } from './models';
+import { MOCK_RECIPES } from './mock-recipes';
 
 @Component({
   imports: [RouterOutlet],
@@ -9,12 +11,13 @@ import { RouterOutlet } from '@angular/router';
 })
 export class App {
   protected readonly title = signal('My Recipe Box');
+  protected readonly recipe = signal<RecipeModel>(MOCK_RECIPES[0]);
 
   protected verCarbonara(): void {
-    console.log('Receita escolhida: Carbonara');
+    this.recipe.set(MOCK_RECIPES[0]);
   }
 
   protected verSaladaCaprese(): void {
-    console.log('Receita escolhida: Salada Caprese');
+    this.recipe.set(MOCK_RECIPES[1]);
   }
 }
