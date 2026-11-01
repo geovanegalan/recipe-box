@@ -9,5 +9,13 @@
 
   <button type="button" (click)="aumentarPorcoes()">Aumentar porções</button>
 
-  <pre>{{ adjustedIngredients() | json }}</pre>
+  <h3>Ingredientes</h3>
+  <ul class="ingredients">
+    @for (ingrediente of adjustedIngredients(); track ingrediente.name) {
+      <li>
+        <span class="ingredient-name">{{ ingrediente.name }}</span>
+        <span>{{ ingrediente.quantity }} {{ ingrediente.unit }}</span>
+      </li>
+    }
+  </ul>
 </article>

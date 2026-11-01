@@ -1,9 +1,8 @@
 ﻿import { Component, computed, input, signal } from '@angular/core';
-import { JsonPipe } from '@angular/common';
 import { RecipeModel } from '../models';
 
 @Component({
-  imports: [JsonPipe],
+  imports: [],
   selector: 'app-recipe-detail',
   styleUrl: './recipe-detail.css',
   templateUrl: './recipe-detail.html',
