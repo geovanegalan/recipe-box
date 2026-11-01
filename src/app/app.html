@@ -1,6 +1,7 @@
 <h1>{{ title() }}</h1>
 
 <h2>{{ recipe().name }}</h2>
+<img [src]="recipe().imgUrl" [alt]="recipe().name" width="320" />
 <p>{{ recipe().description }}</p>
 
 <p>Porções: {{ servings() }}</p>
