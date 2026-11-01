@@ -18,6 +18,4 @@ export class RecipeList {
   protected verSaladaCaprese(): void {
     this.recipe.set(MOCK_RECIPES[1]);
   }
-
 }
-
